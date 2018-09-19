@@ -1,0 +1,169 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+header#nonMain {
+    height: auto;
+}
+
+header#nonMain .navbar.top-nav-collapse {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#intro {
+    /*    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+main {
+    padding-top: 60px;
+}
+
+.top-nav-collapse {
+    background-color: #24355C;
+}
+
+
+/* FOOTER */
+
+.navbar-nav.nav-flex-icons.socials {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav.nav-flex-icons.socials li {
+    display: inline-block;
+}
+
+.navbar-nav.nav-flex-icons.socials li a {
+    padding: 0 .5rem;
+}
+
+
+/* SLICK SLIDER */
+
+.background-cover,
+.slickSlide {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slickSlide {
+    height: 100vh;
+}
+
+.slide--1 {
+    background-image: url('../img/main/ugaona1.jpg');
+}
+
+.slide--2 {
+    background-image: url('../img/main/ugaona2.jpg');
+}
+
+.slide--3 {
+    background-image: url('../img/main/garnitura8.jpg');
+}
+
+.slide--4 {
+    background-image: url('../img/main/lezaj1.jpg');
+}
+
+.slide--5 {
+    background-image: url('../img/main/lezaj2.jpg');
+}
+
+.slide--6 {
+    background-image: url('../img/main/lezaj4.jpg');
+}
+
+.slick-dots {
+    bottom: 0px;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    padding: 0;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.slick-active {
+    background: white!important;
+}
+
+.slick-dots li button::before {
+    transition: all .3s ease;
+    color: white!important;
+    content: "";
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: transparent;
+    left: 8px;
+    top: 8px;
+    border: 2px solid transparent;
+}
+
+.slick-dots li:hover button::before {
+    width: 16px;
+    height: 16px;
+    left: 0px;
+    top: 0px;
+    border: 2px solid white;
+}
+
+
+/* LIGHTBOX */
+
+#lightboxOverlay {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+#lightbox {
+    position: fixed !important;
+    top: 50% !important;
+    transform: translateY(-45%);
+}
+
+.lb-next {
+    background: url("../img/lightbox/next.png") no-repeat scroll right 48% transparent !important;
+}
+
+.lb-prev {
+    background: url("../img/lightbox/prev.png") no-repeat scroll left 48% transparent !important;
+}
+
+.lb-data .lb-close {
+    background: url("../img/lightbox/close.png") top right no-repeat !important;
+}
+
+​@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background-color: #24355C;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background-color: #24355C;
+    }
+}
