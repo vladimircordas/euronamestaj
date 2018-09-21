@@ -33,6 +33,13 @@ main {
 
 /* DROPDOWN MENUS */
 
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: none;
+}
+
 .dropdown .dropdown-menu .dropdown-item,
 .dropleft .dropdown-menu .dropdown-item,
 .dropright .dropdown-menu .dropdown-item,
@@ -260,6 +267,14 @@ main {
     justify-content: center;
 }
 
+.swiper-thumbnails button .mask {
+    opacity: 1;
+}
+
+.swiper-thumbnails button:hover .card .img-container.view.overlay .mask {
+    opacity: 0;
+}
+
 .swiper-thumbnails button {
     background: transparent;
     border: none;
@@ -272,6 +287,10 @@ main {
 
 .swiper-thumbnails button.is-active {
     transform: scale(1.1);
+}
+
+.swiper-thumbnails button.is-active .card .img-container.view.overlay .mask {
+    opacity: 0;
 }
 
 .swiper-thumbnails button .card {
@@ -316,7 +335,7 @@ main {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.33);
+    background: rgba(255, 255, 255, 0.7);
     padding: 5px;
     border-radius: 10px;
     width: auto;
