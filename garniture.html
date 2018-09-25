@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <!-- LightBox css-->
     <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
@@ -50,15 +52,15 @@
                         <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Proizvodi</a>
                             <span class="sr-only">(current)</span>
-                            <div class="dropdown-menu dropdown-ins" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item active" href="#">Garniture</a>
-                                <a class="dropdown-item" href="#">Ugaone garniture</a>
-                                <a class="dropdown-item" href="#">Lezajevi</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="garniture.html">Garniture</a>
+                                <a class="dropdown-item active" href="#">Ugaone garniture</a>
+                                <a class="dropdown-item" href="lezajevi.html">Lezajevi</a>
                             </div>
                         </li>
                         <!-- Dropdown -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Galerija</a>
+                            <a class="nav-link" href="gallery.html">Galerija</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">O nama</a>
@@ -73,6 +75,9 @@
                     <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
                             <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"><i class="fa fa-instagram"></i></a>
@@ -91,353 +96,499 @@
     <!--Main layout-->
     <main class="mt-5">
         <div class="container">
-            <h1 class="mb-5 font-weight-bold text-center">Garniture</h1>
+            <h2 class="font-weight-bold text-center">Ugaone garniture:</h2>
             <!--Section: Gallery-->
-            <div class="container py-5 bg-faded">
-                <div class="card-columns">
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/garniture/garnitura 1.jpg" alt="Card image cap">
-                        <a href="./img/garniture/garnitura 1.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
+            <div class="row">
+                <div class="container py-5 bg-faded position-relative" id="swiperMain">
 
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
+                    <div class="swiper-container swiper-container-outter product-slider card view">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/garniture/garnitura 1.jpg" alt="Card image cap">
+                                                <a href="./img/garniture/garnitura 1.jpg" data-lightbox="garnitura-1" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/garniture/garnitura 1.jpg" alt="Card image cap">
+                                                <a href="./img/garniture/garnitura 1.jpg" data-lightbox="garnitura-1" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/garniture/garnitura 1.jpg" alt="Card image cap">
+                                                <a href="./img/garniture/garnitura 1.jpg" data-lightbox="garnitura-1" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/garniture/garnitura 2.jpg" alt="Card image cap">
+                                                <a href="./img/garniture/garnitura 2.jpg" data-lightbox="garnitura-2" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/garniture/garnitura 2.jpg" alt="Card image cap">
+                                                <a href="./img/garniture/garnitura 2.jpg" data-lightbox="garnitura-2" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/garniture/garnitura 2.jpg" alt="Card image cap">
+                                                <a href="./img/garniture/garnitura 2.jpg" data-lightbox="garnitura-2" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/garniture/garnitura 3.jpg" alt="Card image cap">
+                                                <a href="./img/garniture/garnitura 3.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/garniture/garnitura 3.jpg" alt="Card image cap">
+                                                <a href="./img/garniture/garnitura 3.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/garniture/garnitura 3.jpg" alt="Card image cap">
+                                                <a href="./img/garniture/garnitura 3.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 1.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 1.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 1.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 1.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 1.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 1.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img img-fluid" src="./img/ugaone/ugaona 2.jpg" alt="Card image">
+                                                <a href="./img/ugaone/ugaona 2.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img img-fluid" src="./img/ugaone/ugaona 2.jpg" alt="Card image">
+                                                <a href="./img/ugaone/ugaona 2.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img img-fluid" src="./img/ugaone/ugaona 2.jpg" alt="Card image">
+                                                <a href="./img/ugaone/ugaona 2.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 4.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 4.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 4.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 4.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 4.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 4.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 3.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 3.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 3.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 3.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 3.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 3.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img img-fluid" src="./img/ugaone/ugaona 5.jpg" alt="Card image">
+                                                <a href="./img/ugaone/ugaona 5.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img img-fluid" src="./img/ugaone/ugaona 5.jpg" alt="Card image">
+                                                <a href="./img/ugaone/ugaona 5.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img img-fluid" src="./img/ugaone/ugaona 5.jpg" alt="Card image">
+                                                <a href="./img/ugaone/ugaona 5.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 6.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 6.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 6.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 6.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 6.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/ugaona 6.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card view overlay z-depth-1-half">
+                                    <div class="img-holder swiper-container swiper-container-nested">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/garnitura 4.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/garnitura 4.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/garnitura 4.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/garnitura 4.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="card-img-top img-fluid" src="./img/ugaone/garnitura 4.jpg" alt="Card image cap">
+                                                <a href="./img/ugaone/garnitura 4.jpg" data-lightbox="gallery" data-title="My caption">
+                                                    <div class="mask rgba-white-slight"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-nested"></div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <!-- Title -->
+                                        <h4 class="card-title"><a>Card title</a></h4>
+                                        <!-- Text -->
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-outter"></div>
+                        <!-- Add Arrows -->
+
                     </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/garniture/garnitura 2.jpg" alt="Card image cap">
-                        <a href="./img/garniture/garnitura 2.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/garniture/garnitura 3.jpg" alt="Card image cap">
-                        <a href="./img/garniture/garnitura 3.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 1.jpg" alt="Card image cap">
-                        <a href="./img/ugaone/ugaona 1.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img img-fluid" src="./img/ugaone/ugaona 2.jpg" alt="Card image">
-                        <a href="./img/ugaone/ugaona 2.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 3.jpg" alt="Card image cap">
-                        <a href="./img/ugaone/ugaona 3.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 4.jpg" alt="Card image cap">
-                        <a href="./img/ugaone/ugaona 4.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img img-fluid" src="./img/ugaone/ugaona 5.jpg" alt="Card image">
-                        <a href="./img/ugaone/ugaona 5.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 6.jpg" alt="Card image cap">
-                        <a href="./img/ugaone/ugaona 6.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/ugaone/garnitura 4.jpg" alt="Card image cap">
-                        <a href="./img/ugaone/garnitura 4.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/ugaone/garnitura 5.jpg" alt="Card image cap">
-                        <a href="./img/ugaone/garnitura 5.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/ugaone/garnitura 6.jpg" alt="Card image cap">
-                        <a href="./img/ugaone/garnitura 6.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/ugaone/garnitura 7.jpg" alt="Card image cap">
-                        <a href="./img/ugaone/garnitura 7.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img img-fluid" src="./img/ugaone/garnitura 8.jpg" alt="Card image">
-                        <a href="./img/ugaone/garnitura 8.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/lezajevi/lezaj 1.jpg" alt="Card image cap">
-                        <a href="./img/lezajevi/lezaj 1.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/lezajevi/lezaj 2.jpg" alt="Card image cap">
-                        <a href="./img/lezajevi/lezaj 2.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img img-fluid" src="./img/lezajevi/lezaj 3.jpg" alt="Card image">
-                        <a href="./img/lezajevi/lezaj 3.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/lezajevi/lezaj 4.jpg" alt="Card image cap">
-                        <a href="./img/lezajevi/lezaj 4.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/lezajevi/lezaj 5.jpg" alt="Card image cap">
-                        <a href="./img/lezajevi/lezaj 5.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/lezajevi/lezaj 6.jpg" alt="Card image cap">
-                        <a href="./img/lezajevi/lezaj 6.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
-                        </div>
-                    </div>
-                    <div class="card view overlay z-depth-1-half">
-                        <img class="card-img-top img-fluid" src="./img/lezajevi/lezaj 7.jpg" alt="Card image cap">
-                        <a href="./img/lezajevi/lezaj 7.jpg" data-lightbox="gallery" data-title="My caption">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                        <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><a>Card title</a></h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
-
+                    <div class="swiper-button-next swiper-button-next-outter"></div>
+                    <div class="swiper-button-prev swiper-button-prev-outter"></div>
+                    <div class="swiper-container-thumbs swiper-container">
+                        <div class="swiper-thumbnails swiper-wrapper">
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/garniture/garnitura 1.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona1</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/garniture/garnitura 2.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona2</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/garniture/garnitura 3.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona3</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 1.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona4</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 2.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona5</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 4.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona6</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 3.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona7</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 5.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona8</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/ugaone/ugaona 6.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona9</p>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="swiper-slide">
+                                <div class="card">
+                                    <div class="img-container view overlay zoom">
+                                        <img class="card-img-top img-fluid" src="./img/ugaone/garnitura 4.jpg" alt="garnitura">
+                                        <div class="mask rgba-stylish-strong"></div>
+                                    </div>
+                                    <div class="stripe">
+                                        <p class="card-text">Ugaona10</p>
+                                    </div>
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>
+
             </div>
-
-            </section>
-            <!--Section: Gallery-->
-
-        </div>
     </main>
     <!--Main layout-->
 
@@ -453,33 +604,42 @@
 
                     <!--Grid column-->
                     <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0 white-text">Pratite nas na socijalnim mrezama!</h6>
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
                     <div class="col-md-6 col-lg-7 text-center text-md-right">
-
-
-                        <ul class="navbar-nav nav-flex-icons socials">
-                            <li class="nav-item">
-                                <!--Facebook-->
-                                <a class="nav-link"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <!--Instagram-->
-                                <a class="nav-link"><i class="fa fa-instagram"></i></a>
-                            </li>
-                        </ul>
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0">
+                            <i class="fa fa-facebook white-text mr-4"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic">
+                            <i class="fa fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!--Google +-->
+                        <a class="gplus-ic">
+                            <i class="fa fa-google-plus white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="li-ic">
+                            <i class="fa fa-linkedin white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                        </a>
                     </div>
                     <!--Grid column-->
-
                 </div>
-                <!--Grid row-->
             </div>
+            <!--Grid row-->
+        </div>
         </div>
         <!-- Social buttons -->
 
+        <!--Footer Links-->
         <!--Footer Links-->
         <div class="container mt-5 mb-4 text-center text-md-left">
             <div class="row mt-3">
@@ -487,7 +647,7 @@
                 <!--First column-->
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
                     <h6 class="text-uppercase font-weight-bold">
-                        <strong>Euro S.S.T.R.</strong>
+                        <strong>Company name</strong>
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -497,40 +657,61 @@
                 <!--Second column-->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase font-weight-bold">
-                        <strong>Proizvodi</strong>
+                        <strong>Products</strong>
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <a href="#!">Garniture</a>
+                        <a href="#!">MDBootstrap</a>
                     </p>
                     <p>
-                        <a href="#!">Ugaone garniture</a>
+                        <a href="#!">MDWordPress</a>
                     </p>
                     <p>
-                        <a href="#!">Lezajevi</a>
+                        <a href="#!">BrandFlow</a>
                     </p>
                     <p>
-                        <a href="#!">Kuhinje</a>
+                        <a href="#!">Bootstrap Angular</a>
                     </p>
                 </div>
                 <!--/.Second column-->
 
                 <!--Third column-->
-                <div class="col-md-4 col-lg-3 col-xl-3">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase font-weight-bold">
-                        <strong>Kontakt</strong>
+                        <strong>Useful links</strong>
                     </h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p>
-                        <i class="fa fa-home mr-3"></i> Ruski Krstur 25233, RS</p>
+                        <a href="#!">Your Account</a>
+                    </p>
                     <p>
-                        <i class="fa fa-envelope mr-3"></i> info@euronamestaj.rs</p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+                </div>
+                <!--/.Third column-->
+
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> info@example.com</p>
                     <p>
                         <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
                     <p>
                         <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
                 </div>
-                <!--/.Third column-->
+                <!--/.Fourth column-->
 
             </div>
         </div>
@@ -539,7 +720,7 @@
         <!--Copyright-->
         <div class="footer-copyright py-3 text-center">
             © 2018 Copyright:
-            <a href="#"> Euro S.S.T.R. </a>
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com </a>
         </div>
         <!--/.Copyright-->
 
@@ -561,6 +742,9 @@
     <script type="text/javascript" src="js/slick.js"></script>
     <!-- LightBox JavaScript-->
     <script type="text/javascript" src="js/lightbox.js"></script>
+    <!-- Swiper JavaScript -->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.thumbnails.js"></script>
     <!-- MAIN JavaScript -->
     <script src="js/main.js"></script>
     <!-- Carousel options -->
@@ -572,6 +756,60 @@
             'resizeDuration': 200,
             'wrapAround': true,
             'fitImagesInViewport': true,
+        });
+
+
+
+
+
+
+        var galleryThumbs = new Swiper('.swiper-container-thumbs', {
+            spaceBetween: 20,
+            slidesPerView: 3,
+            loop: true,
+            freeMode: false,
+            loopedSlides: 5, //looped slides should be the same
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            centeredSlides: true,
+            breakpoints: {
+                // when window width is <= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 5,
+                    centeredSlides: true,
+                }
+            }
+        });
+        var galleryTop = new Swiper('.swiper-container-outter', {
+            spaceBetween: 20,
+            loop: true,
+            loopedSlides: 5, //looped slides should be the same
+            navigation: {
+                nextEl: '.swiper-button-next-outter',
+                prevEl: '.swiper-button-prev-outter',
+            },
+            thumbs: {
+                swiper: galleryThumbs,
+            },
+
+
+
+        });
+
+        var nestedSwiper = new Swiper('.swiper-container-nested', {
+            direction: 'horizontal',
+            spaceBetween: 50,
+            nested: true,
+            pagination: {
+                el: '.swiper-pagination-nested',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-nested',
+                prevEl: '.swiper-button-prev-nested',
+            },
+            effect: "cube",
         });
     </script>
 

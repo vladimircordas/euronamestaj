@@ -277,6 +277,8 @@
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
                                     </div>
                                     <div class="card-body">
 
@@ -312,6 +314,8 @@
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
                                     </div>
                                     <div class="card-body">
 
@@ -347,6 +351,8 @@
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
                                     </div>
                                     <div class="card-body">
 
@@ -382,6 +388,8 @@
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
                                     </div>
                                     <div class="card-body">
 
@@ -417,6 +425,8 @@
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
                                     </div>
                                     <div class="card-body">
 
@@ -452,6 +462,8 @@
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-nested"></div>
+                                        <div class="swiper-button-next swiper-button-next-nested"></div>
+                                        <div class="swiper-button-prev swiper-button-prev-nested"></div>
                                     </div>
                                     <div class="card-body">
 
@@ -765,13 +777,15 @@
 
         var galleryThumbs = new Swiper('.swiper-container-thumbs', {
             spaceBetween: 20,
-            slidesPerView: 3,
+            slidesPerView: 5,
             loop: true,
             freeMode: false,
-            loopedSlides: 5, //looped slides should be the same
+            loopedSlides: 10, //looped slides should be the same
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
             centeredSlides: true,
+            grabCursor: true,
+            touchRatio: 0.2,
             breakpoints: {
                 // when window width is <= 640px
                 640: {
@@ -784,7 +798,7 @@
         var galleryTop = new Swiper('.swiper-container-outter', {
             spaceBetween: 20,
             loop: true,
-            loopedSlides: 5, //looped slides should be the same
+            loopedSlides: 10, //looped slides should be the same
             navigation: {
                 nextEl: '.swiper-button-next-outter',
                 prevEl: '.swiper-button-prev-outter',
@@ -799,8 +813,11 @@
 
         var nestedSwiper = new Swiper('.swiper-container-nested', {
             direction: 'horizontal',
-            spaceBetween: 50,
+            spaceBetween: 0,
             nested: true,
+            loop: true,
+            loopedSlides: 10,
+            grabCursor: true,
             pagination: {
                 el: '.swiper-pagination-nested',
                 clickable: true,
