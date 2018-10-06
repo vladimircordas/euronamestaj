@@ -516,9 +516,9 @@
     <script>
         var galleryThumbs = new Swiper('.swiper-container-thumbs', {
             spaceBetween: 10,
-            slidesPerView: 4,
+            slidesPerView: 3,
             centeredSlides: true,
-            loop: false,
+            loop: true,
             loopedSlides: 5, //looped slides should be the same
             freeMode: false,
             watchSlidesVisibility: true,
@@ -537,8 +537,8 @@
         });
         var galleryTop = new Swiper('.swiper-container-outter', {
             spaceBetween: 10,
-            loop: false,
-            loopedSlides: 5, //looped slides should be the same
+            loop: true,
+            loopedSlides: 3, //looped slides should be the same
             preventInteractionOnTransition: true,
             navigation: {
                 nextEl: '.swiper-button-next-outter',
