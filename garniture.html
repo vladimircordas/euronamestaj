@@ -324,6 +324,7 @@
                     <div class="swiper-button-next swiper-button-next-outter"></div>
                     <div class="swiper-button-prev swiper-button-prev-outter"></div>
                     <div class="swiper-container-thumbs swiper-container">
+
                         <div class="swiper-thumbnails swiper-wrapper">
                             <button class="swiper-slide">
                                 <div class="card">
@@ -516,34 +517,41 @@
         var galleryThumbs = new Swiper('.swiper-container-thumbs', {
             spaceBetween: 10,
             slidesPerView: 4,
-            loop: true,
+            centeredSlides: true,
+            loop: false,
             loopedSlides: 5, //looped slides should be the same
             freeMode: false,
-            centeredSlides: true,
-            touchRatio: 0.2,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            touchRatio: 0.33,
+            preventInteractionOnTransition: true,
+            slideToClickedSlide: true,
             breakpoints: {
                 // when window width is <= 640px
                 640: {
                     slidesPerView: 2,
                     spaceBetween: 5,
-                    centeredSlides: true,
                     grabCursor: true,
                 }
             }
         });
         var galleryTop = new Swiper('.swiper-container-outter', {
             spaceBetween: 10,
-            loop: true,
+            loop: false,
             loopedSlides: 5, //looped slides should be the same
-            centeredSlides: true,
+            preventInteractionOnTransition: true,
             navigation: {
                 nextEl: '.swiper-button-next-outter',
                 prevEl: '.swiper-button-prev-outter',
+                clickable: true,
             },
             thumbs: {
                 swiper: galleryThumbs,
             },
+
         });
+
+
 
         var nestedSwiper = new Swiper('.swiper-container-nested', {
             direction: 'horizontal',
